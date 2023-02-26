@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 const GRID_SNAP := 64
-const SPEED := 0.35
+const SPEED := 0.75
 
 var is_moving := false
 
@@ -25,7 +25,7 @@ func _move_tween(dir: Vector2) -> void:
 	is_moving = true
 	var tween : Tween = get_tree().create_tween()
 	tween.set_trans(Tween.TRANS_BACK)
-	tween.set_ease(Tween.EASE_OUT)
+	tween.set_ease(Tween.EASE_IN_OUT)
 	tween.tween_property(self, "global_position", global_position + dir * GRID_SNAP, SPEED)
 	await tween.finished
 	
