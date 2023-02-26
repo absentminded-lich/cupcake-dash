@@ -1,15 +1,23 @@
 extends CharacterBody2D
 
-const SPEED = 300.0
+const GRID_SNAP := 64
+const SPEED := 0.25
 
-func _physics_process(delta):
+func _input(event) -> void:
+	if event.is_action_pressed("ui_down"):
+		_move(Vector2.DOWN)
+	if event.is_action_pressed("ui_left"):
+		_move(Vector2.LEFT)
+	if event.is_action_pressed("ui_right"):
+		_move(Vector2.RIGHT)
+	if event.is_action_pressed("ui_up"):
+		_move(Vector2.UP)
+		
+func _move(dir: Vector2) -> void:
+	_move_tween(dir)
 
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI actions with custom gameplay actions.
-	var direction = Input.get_axis("ui_left", "ui_right")
-	if direction:
-		velocity.x = direction * SPEED
-	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-
-	move_and_slide()
+func _move_tween(dir: Vector2) -> void:
+	var tween: Tween = get_tree().create_tween()
+	tween.set_trans(Tween.TRANS_BACK)
+	tween.set_ease(Tween.EASE_OUT)
+	tween.tween_property(self, "global_position", global_position + dir * GRID_SNAP, SPEED)

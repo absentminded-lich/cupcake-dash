@@ -8,6 +8,7 @@
 [node name="GrassTileMap" parent="." instance=ExtResource("1_8blyc")]
 
 [node name="Player" parent="." instance=ExtResource("2_f7npm")]
+position = Vector2(32, 32)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(256, 256)
