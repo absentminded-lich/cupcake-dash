@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bqah7pyer3dgk"]
+[gd_scene load_steps=5 format=3 uid="uid://bqah7pyer3dgk"]
 
 [ext_resource type="Script" path="res://player.gd" id="1_xvcf5"]
+[ext_resource type="Texture2D" uid="uid://co3v55arpw45u" path="res://shadow.png" id="2_0g10s"]
 [ext_resource type="Texture2D" uid="uid://b5ujdh8konlg4" path="res://rainbow_grump.png" id="2_7002t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_unqxm"]
@@ -9,6 +10,12 @@ size = Vector2(64, 64)
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_xvcf5")
+
+[node name="Shadow" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.498039)
+position = Vector2(0, 27.5)
+scale = Vector2(1.6, 1.351)
+texture = ExtResource("2_0g10s")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_7002t")

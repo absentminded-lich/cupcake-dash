@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bedhwqp307dvl"]
+[gd_scene load_steps=4 format=3 uid="uid://bedhwqp307dvl"]
 
 [ext_resource type="PackedScene" uid="uid://w0rsghh87yma" path="res://grass_tile_map.tscn" id="1_8blyc"]
 [ext_resource type="PackedScene" uid="uid://bqah7pyer3dgk" path="res://player.tscn" id="2_f7npm"]
+[ext_resource type="PackedScene" uid="uid://7mhvr7t32n6j" path="res://cupcake.tscn" id="3_hgfiq"]
 
 [node name="World" type="Node2D"]
 
@@ -12,3 +13,8 @@ position = Vector2(32, 32)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 zoom = Vector2(2, 2)
+
+[node name="Cupcakes" type="Node2D" parent="."]
+
+[node name="Cupcake" parent="Cupcakes" instance=ExtResource("3_hgfiq")]
+position = Vector2(224, 32)
