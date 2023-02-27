@@ -3,6 +3,8 @@ extends CharacterBody2D
 const GRID_SNAP := 64
 const SPEED := 0.75
 
+@onready var area2d = $Area2D
+
 var is_moving := false
 
 func _input(_Input) -> void:
@@ -23,6 +25,7 @@ func _move_tween(dir: Vector2) -> void:
 		return
 		
 	is_moving = true
+	area2d.monitoring = false
 	var tween : Tween = get_tree().create_tween()
 	tween.set_trans(Tween.TRANS_BACK)
 	tween.set_ease(Tween.EASE_IN_OUT)
@@ -30,3 +33,8 @@ func _move_tween(dir: Vector2) -> void:
 	await tween.finished
 	
 	is_moving = false
+	area2d.monitoring = true
+	
+	
+func _on_area_2d_area_entered(area):
+	print("I collide!")

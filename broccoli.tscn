@@ -1,7 +1,10 @@
-[gd_scene load_steps=3 format=3 uid="uid://q00w7axe7kba"]
+[gd_scene load_steps=4 format=3 uid="uid://q00w7axe7kba"]
 
 [ext_resource type="Texture2D" uid="uid://co3v55arpw45u" path="res://shadow.png" id="1_8j2m8"]
 [ext_resource type="Texture2D" uid="uid://co6wq7qpg8ie" path="res://broccoli.png" id="2_fijfu"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_6gbk8"]
+radius = 24.0
 
 [node name="Broccoli" type="StaticBody2D"]
 
@@ -13,3 +16,10 @@ texture = ExtResource("1_8j2m8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_fijfu")
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CircleShape2D_6gbk8")
