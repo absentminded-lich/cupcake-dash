@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bedhwqp307dvl"]
+[gd_scene load_steps=5 format=3 uid="uid://bedhwqp307dvl"]
 
 [ext_resource type="PackedScene" uid="uid://w0rsghh87yma" path="res://grass_tile_map.tscn" id="1_8blyc"]
 [ext_resource type="PackedScene" uid="uid://bqah7pyer3dgk" path="res://player.tscn" id="2_f7npm"]
 [ext_resource type="PackedScene" uid="uid://7mhvr7t32n6j" path="res://cupcake.tscn" id="3_hgfiq"]
+[ext_resource type="PackedScene" uid="uid://q00w7axe7kba" path="res://broccoli.tscn" id="4_br63t"]
 
 [node name="World" type="Node2D"]
 
@@ -18,3 +19,20 @@ zoom = Vector2(2, 2)
 
 [node name="Cupcake" parent="Cupcakes" instance=ExtResource("3_hgfiq")]
 position = Vector2(224, 32)
+
+[node name="Cupcake2" parent="Cupcakes" instance=ExtResource("3_hgfiq")]
+position = Vector2(288, 32)
+
+[node name="Cupcake3" parent="Cupcakes" instance=ExtResource("3_hgfiq")]
+position = Vector2(288, 96)
+
+[node name="Cupcake4" parent="Cupcakes" instance=ExtResource("3_hgfiq")]
+position = Vector2(288, 160)
+
+[node name="Broccoli" type="Node2D" parent="."]
+
+[node name="Broccoli" parent="Broccoli" instance=ExtResource("4_br63t")]
+position = Vector2(224, 96)
+
+[node name="Broccoli2" parent="Broccoli" instance=ExtResource("4_br63t")]
+position = Vector2(416, 221)
