@@ -1,6 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://bqah7pyer3dgk"]
+[gd_scene load_steps=6 format=3 uid="uid://dc1hkbkunue33"]
 
-[ext_resource type="Script" path="res://player_new.cs" id="1_poces"]
+[ext_resource type="Script" path="res://player.cs" id="1_alnfg"]
 [ext_resource type="Texture2D" uid="uid://co3v55arpw45u" path="res://shadow.png" id="2_0g10s"]
 [ext_resource type="Texture2D" uid="uid://b5ujdh8konlg4" path="res://rainbow_grump.png" id="2_7002t"]
 
@@ -12,7 +12,7 @@ radius = 32.0
 
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
-script = ExtResource("1_poces")
+script = ExtResource("1_alnfg")
 
 [node name="Shadow" type="Sprite2D" parent="."]
 modulate = Color(1, 1, 1, 0.498039)

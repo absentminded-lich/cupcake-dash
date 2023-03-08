@@ -2,7 +2,7 @@ using Godot;
 using System;
 using System.Threading.Tasks;
 
-public partial class player_new : Godot.CharacterBody2D
+public partial class player : Godot.CharacterBody2D
 {
 	private const int GridSnap = 64;
 	private const float Speed = 0.75f;
