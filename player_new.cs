@@ -66,10 +66,9 @@ public partial class player_new : Godot.CharacterBody2D
 		this._isMoving = false;
 		this._area2d.Monitoring = true;
 	}
+
+	private void OnArea2DAreaEntered(Area2D area)
+	{
+		GD.Print("I collide!");
+	}
 }
-
-
-//private void OnArea2DAreaEntered(Area2D area)
-//{
-//	GD.Print("I collide!");
-//}
