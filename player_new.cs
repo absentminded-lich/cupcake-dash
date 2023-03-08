@@ -61,7 +61,7 @@ public partial class player_new : Godot.CharacterBody2D
 		tween.SetEase(Tween.EaseType.InOut);
 		tween.TweenProperty(this, "global_position", newPos, Speed);
 
-		//await tween.Finished;
+		await ToSignal(tween, "finished");
 
 		this._isMoving = false;
 		this._area2d.Monitoring = true;
