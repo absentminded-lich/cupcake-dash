@@ -9,30 +9,35 @@
 
 [node name="GrassTileMap" parent="." instance=ExtResource("1_8blyc")]
 
-[node name="Player" parent="." instance=ExtResource("2_f7npm")]
-position = Vector2(32, 32)
+[node name="Assets" type="Node2D" parent="."]
+y_sort_enabled = true
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
-zoom = Vector2(2, 2)
+[node name="Cupcakes" type="Node2D" parent="Assets"]
+y_sort_enabled = true
 
-[node name="Cupcakes" type="Node2D" parent="."]
-
-[node name="Cupcake" parent="Cupcakes" instance=ExtResource("3_hgfiq")]
+[node name="Cupcake" parent="Assets/Cupcakes" instance=ExtResource("3_hgfiq")]
 position = Vector2(224, 32)
 
-[node name="Cupcake2" parent="Cupcakes" instance=ExtResource("3_hgfiq")]
+[node name="Cupcake2" parent="Assets/Cupcakes" instance=ExtResource("3_hgfiq")]
 position = Vector2(288, 32)
 
-[node name="Cupcake3" parent="Cupcakes" instance=ExtResource("3_hgfiq")]
+[node name="Cupcake3" parent="Assets/Cupcakes" instance=ExtResource("3_hgfiq")]
 position = Vector2(288, 96)
 
-[node name="Cupcake4" parent="Cupcakes" instance=ExtResource("3_hgfiq")]
+[node name="Cupcake4" parent="Assets/Cupcakes" instance=ExtResource("3_hgfiq")]
 position = Vector2(288, 160)
 
-[node name="Broccoli" type="Node2D" parent="."]
+[node name="Broccoli" type="Node2D" parent="Assets"]
+y_sort_enabled = true
 
-[node name="Broccoli" parent="Broccoli" instance=ExtResource("4_br63t")]
+[node name="Broccoli" parent="Assets/Broccoli" instance=ExtResource("4_br63t")]
 position = Vector2(224, 96)
 
-[node name="Broccoli2" parent="Broccoli" instance=ExtResource("4_br63t")]
+[node name="Broccoli2" parent="Assets/Broccoli" instance=ExtResource("4_br63t")]
 position = Vector2(416, 221)
+
+[node name="Player" parent="Assets" instance=ExtResource("2_f7npm")]
+position = Vector2(32, 32)
+
+[node name="Camera2D" type="Camera2D" parent="Assets/Player"]
+zoom = Vector2(2, 2)

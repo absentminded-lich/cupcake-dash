@@ -1,70 +1,34 @@
 using Godot;
-using System;
-using System.Threading.Tasks;
 
 public partial class player : Godot.CharacterBody2D
 {
-	private const int GridSnap = 64;
-	private const float Speed = 0.75f;
+	private const float Speed = 100f;
 
 	private Godot.Area2D _area2d = null;
-
-	private bool _isMoving = false;
 
 	public override void _Ready()
 	{
 		this._area2d = GetNode<Area2D>("Area2D");
 	}
 
-	public override void _Input(InputEvent @event)
+	public override void _PhysicsProcess(double delta)
 	{
-		if (Input.IsActionPressed("ui_down"))
+		Vector2 velocity = Velocity;
+
+		Vector2 direction = Input.GetVector("ui_left", "ui_right", "ui_up", "ui_down");
+		if (direction != Vector2.Zero)
 		{
-			this.Move(Vector2.Down);
+			velocity.X = direction.X * Speed;
+			velocity.Y = direction.Y * Speed;
 		}
-		if (Input.IsActionPressed("ui_left"))
+		else
 		{
-			this.Move(Vector2.Left);
+			velocity.X = Mathf.MoveToward(Velocity.X, 0, Speed);
+			velocity.Y = Mathf.MoveToward(Velocity.Y, 0, Speed);
 		}
-		if (Input.IsActionPressed("ui_right"))
-		{
-			this.Move(Vector2.Right);
-		}
-		if (Input.IsActionPressed("ui_up"))
-		{
-			this.Move(Vector2.Up);
-		}
-	}
 
-	public override void _Process(double delta)
-	{
-	}
-
-	public void Move(Vector2 pos)
-	{
-		this.MoveTween(pos);
-	}
-
-	public async void MoveTween(Vector2 dir)
-	{
-		if (this._isMoving) return;
-
-		this._isMoving = true;
-		this._area2d.Monitoring = true;
-
-		Vector2 newPos = Vector2.Zero;
-		newPos.X = GlobalPosition.X + dir.X * GridSnap;
-		newPos.Y = GlobalPosition.Y + dir.Y * GridSnap;
-
-		Tween tween = GetTree().CreateTween();
-		tween.SetTrans(Tween.TransitionType.Back);
-		tween.SetEase(Tween.EaseType.InOut);
-		tween.TweenProperty(this, "global_position", newPos, Speed);
-
-		await ToSignal(tween, "finished");
-
-		this._isMoving = false;
-		this._area2d.Monitoring = true;
+		Velocity = velocity;
+		MoveAndSlide();
 	}
 
 	private void OnArea2DAreaEntered(Area2D area)
