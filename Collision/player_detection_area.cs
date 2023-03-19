@@ -24,6 +24,16 @@ public partial class player_detection_area : Area2D
 		return this._player != null;
 	}
 
+	public Vector2 GetPlayerGlobalPosition()
+	{
+		if (this.IsPlayerColliding())
+		{
+			return this._player.GlobalPosition;
+		}
+
+		return Vector2.Zero;
+	}
+
 	private void OnPlayerDetectionAreaBodyEntered(Node2D body)
 	{
 		foreach(String group in body.GetGroups())
