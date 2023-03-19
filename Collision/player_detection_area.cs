@@ -39,4 +39,13 @@ public partial class player_detection_area : Area2D
 			}
 		}
 	}
+
+	private void OnPlayerDetectionAreaBodyExited(Node2D body)
+	{
+		if (this._player != null && body == this._player)
+		{
+			this._player = null;
+		}
+	}
+
 }
