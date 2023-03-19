@@ -19,6 +19,11 @@ public partial class player_detection_area : Area2D
 		}
 	}
 
+	public bool IsPlayerColliding()
+	{
+		return this._player != null;
+	}
+
 	private void OnPlayerDetectionAreaBodyEntered(Node2D body)
 	{
 		foreach(String group in body.GetGroups())
@@ -37,5 +42,4 @@ public partial class player_detection_area : Area2D
 			this._player = null;
 		}
 	}
-
 }
