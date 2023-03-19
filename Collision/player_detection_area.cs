@@ -6,7 +6,8 @@ public partial class player_detection_area : Area2D
 	[Export]
 	private int Radius = 50;
 
-	private Godot.CollisionShape2D _collisionShape2d = null;
+	private Node2D _player = null;
+	private CollisionShape2D _collisionShape2d = null;
 
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
@@ -18,13 +19,23 @@ public partial class player_detection_area : Area2D
 		}
 	}
 
+	public override void _PhysicsProcess(double delta)
+	{
+		base._PhysicsProcess(delta);
+
+		if (this._player != null)
+		{
+			GD.Print(this._player.GlobalPosition);
+		}
+	}
+
 	private void OnPlayerDetectionAreaBodyEntered(Node2D body)
 	{
 		foreach(String group in body.GetGroups())
 		{
 			if (group.Equals("player"))
 			{
-				GD.Print("Run");
+				this._player = body;
 			}
 		}
 	}
