@@ -19,16 +19,6 @@ public partial class player_detection_area : Area2D
 		}
 	}
 
-	public override void _PhysicsProcess(double delta)
-	{
-		base._PhysicsProcess(delta);
-
-		if (this._player != null)
-		{
-			GD.Print(this._player.GlobalPosition);
-		}
-	}
-
 	private void OnPlayerDetectionAreaBodyEntered(Node2D body)
 	{
 		foreach(String group in body.GetGroups())
