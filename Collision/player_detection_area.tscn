@@ -5,8 +5,12 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_vrmwa"]
 
 [node name="PlayerDetectionArea" type="Area2D"]
+collision_layer = 0
+monitorable = false
 script = ExtResource("1_totc0")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_vrmwa")
 debug_color = Color(0.933333, 0.239216, 0.227451, 0.419608)
+
+[connection signal="body_entered" from="." to="." method="OnPlayerDetectionAreaBodyEntered"]
