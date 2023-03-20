@@ -24,11 +24,11 @@ public partial class player_detection_area : Area2D
 		return this._player != null;
 	}
 
-	public Vector2 GetPlayerGlobalPosition()
+	public Vector2 GetPlayerPosition()
 	{
 		if (this.IsPlayerColliding())
 		{
-			return this._player.GlobalPosition;
+			return this._player.Position;
 		}
 
 		return Vector2.Zero;
