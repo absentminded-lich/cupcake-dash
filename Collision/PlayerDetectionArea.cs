@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class player_detection_area : Area2D
+public partial class PlayerDetectionArea : Area2D
 {
 	[Export]
 	private int Radius = 50;

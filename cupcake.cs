@@ -1,13 +1,13 @@
 using Godot;
 using System;
 
-public partial class cupcake : StaticBody2D
+public partial class Cupcake : StaticBody2D
 {
-	private player_detection_area _playerDetectionArea = null;
+	private PlayerDetectionArea _playerDetectionArea = null;
 
 	public override void _Ready()
 	{
-		this._playerDetectionArea = GetNode<player_detection_area>("PlayerDetectionArea");
+		this._playerDetectionArea = GetNode<PlayerDetectionArea>("PlayerDetectionArea");
 	}
 
 	public override void _PhysicsProcess(double delta)
