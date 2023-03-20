@@ -17,8 +17,8 @@ public partial class Cupcake : StaticBody2D
 		Vector2 playerPosition = this._playerDetectionArea.GetPlayerPosition();
 		if (playerPosition != Vector2.Zero)
 		{
-			Vector2 moveToward = Position + (Position - playerPosition);
-			Position = Position.Lerp(moveToward, (float)delta * 50);
-		}
+            Vector2 moveToward = Position + (Position - playerPosition).Normalized();
+            Position = Position.Lerp(moveToward, (float)(delta * 50));
+        }
 	}
 }
