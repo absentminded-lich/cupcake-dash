@@ -32,6 +32,7 @@ position = Vector2(352, 96)
 Speed = 200
 
 [node name="Broccoli" type="Node2D" parent="Assets"]
+visible = false
 y_sort_enabled = true
 
 [node name="Broccoli" parent="Assets/Broccoli" instance=ExtResource("3_omu8k")]
