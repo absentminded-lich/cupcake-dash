@@ -18,7 +18,7 @@ public partial class Cupcake : StaticBody2D
 		if (playerPosition != Vector2.Zero)
 		{
 			Vector2 moveToward = Position + (Position - playerPosition);
-			Position = Position.Lerp(moveToward, (float)delta);
+			Position = Position.Lerp(moveToward, (float)delta * 50);
 		}
 	}
 }
