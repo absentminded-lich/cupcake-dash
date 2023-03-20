@@ -33,6 +33,6 @@ public partial class Player : Godot.CharacterBody2D
 
 	private void OnArea2DAreaEntered(Area2D area)
 	{
-		GD.Print("I collide!");
+		area.GetParent().QueueFree();
 	}
 }
