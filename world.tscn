@@ -27,6 +27,10 @@ position = Vector2(288, 96)
 [node name="Cupcake4" parent="Assets/Cupcakes" instance=ExtResource("2_31cuq")]
 position = Vector2(288, 160)
 
+[node name="Cupcake5" parent="Assets/Cupcakes" instance=ExtResource("2_31cuq")]
+position = Vector2(352, 96)
+Speed = 200
+
 [node name="Broccoli" type="Node2D" parent="Assets"]
 y_sort_enabled = true
 
