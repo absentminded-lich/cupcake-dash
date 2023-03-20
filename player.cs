@@ -1,6 +1,6 @@
 using Godot;
 
-public partial class player : Godot.CharacterBody2D
+public partial class Player : Godot.CharacterBody2D
 {
 	private const float Speed = 100f;
 
