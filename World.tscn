@@ -58,27 +58,35 @@ position = Vector2(288, 160)
 
 [node name="BlueCupcake" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(224, 160)
+Speed = 50.0
 
 [node name="BlueCupcake3" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(160, 92)
+Speed = 50.0
 
 [node name="BlueCupcake4" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(240, 64)
+Speed = 50.0
 
 [node name="BlueCupcake5" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(324, 0)
+Speed = 50.0
 
 [node name="BlueCupcake6" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(264, 137)
+Speed = 50.0
 
 [node name="BlueCupcake2" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(352, 96)
+Speed = 50.0
 
 [node name="YellowCupcake" parent="Assets/Cupcakes" instance=ExtResource("4_84cuf")]
 position = Vector2(210, 92)
+Speed = 50.0
 
 [node name="YellowCupcake2" parent="Assets/Cupcakes" instance=ExtResource("4_84cuf")]
 position = Vector2(320, 56)
+Speed = 50.0
 
 [node name="Cupcake14" parent="Assets/Cupcakes" instance=ExtResource("2_31cuq")]
 position = Vector2(16, 120)
@@ -121,27 +129,35 @@ position = Vector2(80, 248)
 
 [node name="BlueCupcake7" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(16, 248)
+Speed = 50.0
 
 [node name="BlueCupcake8" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-48, 180)
+Speed = 50.0
 
 [node name="BlueCupcake9" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(32, 152)
+Speed = 50.0
 
 [node name="BlueCupcake10" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(116, 88)
+Speed = 50.0
 
 [node name="BlueCupcake11" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(56, 225)
+Speed = 50.0
 
 [node name="BlueCupcake12" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(144, 184)
+Speed = 50.0
 
 [node name="YellowCupcake3" parent="Assets/Cupcakes" instance=ExtResource("4_84cuf")]
 position = Vector2(2, 180)
+Speed = 50.0
 
 [node name="YellowCupcake4" parent="Assets/Cupcakes" instance=ExtResource("4_84cuf")]
 position = Vector2(112, 144)
+Speed = 50.0
 
 [node name="Cupcake27" parent="Assets/Cupcakes" instance=ExtResource("2_31cuq")]
 position = Vector2(168, -128)
@@ -184,27 +200,35 @@ position = Vector2(232, 0)
 
 [node name="BlueCupcake13" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(168, 0)
+Speed = 50.0
 
 [node name="BlueCupcake14" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(104, -68)
+Speed = 50.0
 
 [node name="BlueCupcake15" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(184, -96)
+Speed = 50.0
 
 [node name="BlueCupcake16" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(268, -160)
+Speed = 50.0
 
 [node name="BlueCupcake17" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(208, -23)
+Speed = 50.0
 
 [node name="BlueCupcake18" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(296, -64)
+Speed = 50.0
 
 [node name="YellowCupcake5" parent="Assets/Cupcakes" instance=ExtResource("4_84cuf")]
 position = Vector2(154, -68)
+Speed = 50.0
 
 [node name="YellowCupcake6" parent="Assets/Cupcakes" instance=ExtResource("4_84cuf")]
 position = Vector2(264, -104)
+Speed = 50.0
 
 [node name="Cupcake40" parent="Assets/Cupcakes" instance=ExtResource("2_31cuq")]
 position = Vector2(-24, -176)
@@ -247,27 +271,35 @@ position = Vector2(40, -48)
 
 [node name="BlueCupcake19" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-24, -48)
+Speed = 50.0
 
 [node name="BlueCupcake20" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-88, -116)
+Speed = 50.0
 
 [node name="BlueCupcake21" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-8, -144)
+Speed = 50.0
 
 [node name="BlueCupcake22" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(76, -208)
+Speed = 50.0
 
 [node name="BlueCupcake23" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(16, -71)
+Speed = 50.0
 
 [node name="BlueCupcake24" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(104, -112)
+Speed = 50.0
 
 [node name="YellowCupcake7" parent="Assets/Cupcakes" instance=ExtResource("4_84cuf")]
 position = Vector2(-38, -116)
+Speed = 50.0
 
 [node name="YellowCupcake8" parent="Assets/Cupcakes" instance=ExtResource("4_84cuf")]
 position = Vector2(72, -152)
+Speed = 50.0
 
 [node name="Cupcake53" parent="Assets/Cupcakes" instance=ExtResource("2_31cuq")]
 position = Vector2(-160, 40)
@@ -310,27 +342,35 @@ position = Vector2(-96, 168)
 
 [node name="BlueCupcake25" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-160, 168)
+Speed = 50.0
 
 [node name="BlueCupcake26" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-224, 100)
+Speed = 50.0
 
 [node name="BlueCupcake27" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-144, 72)
+Speed = 50.0
 
 [node name="BlueCupcake28" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-60, 8)
+Speed = 50.0
 
 [node name="BlueCupcake29" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-120, 145)
+Speed = 50.0
 
 [node name="BlueCupcake30" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-32, 104)
+Speed = 50.0
 
 [node name="YellowCupcake9" parent="Assets/Cupcakes" instance=ExtResource("4_84cuf")]
 position = Vector2(-174, 100)
+Speed = 50.0
 
 [node name="YellowCupcake10" parent="Assets/Cupcakes" instance=ExtResource("4_84cuf")]
 position = Vector2(-64, 64)
+Speed = 50.0
 
 [node name="Cupcake66" parent="Assets/Cupcakes" instance=ExtResource("2_31cuq")]
 position = Vector2(-256, -92)
@@ -373,27 +413,35 @@ position = Vector2(-192, 36)
 
 [node name="BlueCupcake31" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-256, 36)
+Speed = 50.0
 
 [node name="BlueCupcake32" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-320, -32)
+Speed = 50.0
 
 [node name="BlueCupcake33" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-240, -60)
+Speed = 50.0
 
 [node name="BlueCupcake34" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-156, -124)
+Speed = 50.0
 
 [node name="BlueCupcake35" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-216, 13)
+Speed = 50.0
 
 [node name="BlueCupcake36" parent="Assets/Cupcakes" instance=ExtResource("3_sesg7")]
 position = Vector2(-128, -28)
+Speed = 50.0
 
 [node name="YellowCupcake11" parent="Assets/Cupcakes" instance=ExtResource("4_84cuf")]
 position = Vector2(-270, -32)
+Speed = 50.0
 
 [node name="YellowCupcake12" parent="Assets/Cupcakes" instance=ExtResource("4_84cuf")]
 position = Vector2(-160, -68)
+Speed = 50.0
 
 [node name="Broccoli" type="Node2D" parent="Assets"]
 visible = false
