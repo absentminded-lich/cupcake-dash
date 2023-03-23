@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class Cupcake : StaticBody2D
+public partial class Cupcake : CharacterBody2D
 {
 	[Export]
 	private int Speed = 50;
